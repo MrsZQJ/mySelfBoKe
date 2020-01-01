@@ -19,7 +19,7 @@
       <div class="con">
         <div id="bar">
           <ul>
-            <li @mouseenter="moster(1)" @mouseleave="mosler(1)" @click="clk(1)">富强</li>
+            <li @mouseenter="moster(1)" @mouseleave="mosler(1)" @click="clk(1)">首页</li>
             <li @mouseenter="moster(2)" @mouseleave="mosler(2)" @click="clk(2)">民主</li>
             <li @mouseenter="moster(3)" @mouseleave="mosler(3)" @click="clk(3)">文明</li>
             <li @mouseenter="moster(4)" @mouseleave="mosler(4)" @click="clk(4)">和谐</li>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="search">
-        <input type="text" />
+        <input type="text" placeholder="请输入..." />
         <img src="../static/images/search.png" alt="search" />
       </div>
     </section>
@@ -50,7 +50,7 @@ export default {
   name: "App",
   data() {
     return {
-      base_place: 0
+      base_place: 0,
     };
   },
   methods: {
@@ -80,6 +80,9 @@ export default {
 html {
   font-size: 13px;
 }
+body{
+  background-color: #fffbf0;
+}
 a {
   text-decoration: none;
 }
@@ -104,6 +107,12 @@ ul li {
 }
 .about ul li a {
   color: #666;
+}
+.about{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
 }
 .logo {
   height: 170px;
