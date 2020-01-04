@@ -129,6 +129,9 @@
           <img src="../../../static/images/timg.png" alt class="yuan" />
         </div>
         <canvas id="canvas" style="border: 1px solid skyblue;height: 100%;"></canvas>
+        <div class="local">
+          <div class="l_box"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -141,16 +144,16 @@ export default {
     return {
       imgList: [
         {
-          img: "/static/images/b1.png"
+          img: "./static/images/b1.png"
         },
         {
-          img: "/static/images/b2.png"
+          img: "./static/images/b2.png"
         },
         {
-          img: "/static/images/b3.png"
+          img: "./static/images/b3.png"
         },
         {
-          img: "/static/images/b4.png"
+          img: "./static/images/b4.png"
         }
       ],
       // 图片宽
@@ -625,7 +628,7 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       if (scrollTop > 600) {
-        this.max_style = { position: "fixed", top: "0px", right: "17%" };
+        this.max_style = { position: "fixed", top: "0px", right: "15%" };
       } else {
         this.max_style = { position: "relative" };
       }
@@ -846,5 +849,14 @@ export default {
 #canvas{
   width: 100% !important;
   height: 75px !important ;
+}
+.local{
+  width: 100%;
+  margin-top: 25px;
+}
+.l_box{
+  width: 45%;
+  border: 1px solid #FFDD99;
+  background-color: #FFF9ED;
 }
 </style>

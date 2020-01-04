@@ -20,9 +20,9 @@
         <div id="bar">
           <ul>
             <li @mouseenter="moster(1)" @mouseleave="mosler(1)" @click="clk(1)">首页</li>
-            <li @mouseenter="moster(2)" @mouseleave="mosler(2)" @click="clk(2)">民主</li>
-            <li @mouseenter="moster(3)" @mouseleave="mosler(3)" @click="clk(3)">文明</li>
-            <li @mouseenter="moster(4)" @mouseleave="mosler(4)" @click="clk(4)">和谐</li>
+            <li @mouseenter="moster(2)" @mouseleave="mosler(2)" @click="clk(2)">技术</li>
+            <li @mouseenter="moster(3)" @mouseleave="mosler(3)" @click="clk(3)">代码</li>
+            <li @mouseenter="moster(4)" @mouseleave="mosler(4)" @click="clk(4)">日记</li>
             <li @mouseenter="moster(5)" @mouseleave="mosler(5)" @click="clk(5)">自由</li>
           </ul>
           <div ref="mov_box" id="mov"></div>
@@ -50,7 +50,7 @@ export default {
   name: "App",
   data() {
     return {
-      base_place: 0,
+      base_place: 0
     };
   },
   methods: {
@@ -68,11 +68,10 @@ export default {
 </script>
 
 <style>
-@font-face{
-    font-family: 'FangZhen';
-    src : url('../static/font/方正黄草_GBK.ttf');
+@font-face {
+  font-family: 'FangZhen';
+  src: url("../static/font/方正黄草_GBK.ttf");
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -80,7 +79,7 @@ export default {
 html {
   font-size: 13px;
 }
-body{
+body {
   background-color: #fffbf0;
 }
 a {
@@ -108,7 +107,7 @@ ul li {
 .about ul li a {
   color: #666;
 }
-.about{
+.about {
   position: fixed;
   width: 100%;
   top: 0;
@@ -116,7 +115,7 @@ ul li {
 }
 .logo {
   height: 170px;
-  background-image: url("../static/images/new_top-min.jpg");
+  background-image: url("../static/images/new_top.jpg");
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -181,25 +180,25 @@ ul li {
   height: 50px;
   left: 0px;
   position: absolute;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   top: 0px;
   background-color: #fffbf0;
   border-top: 4px solid #f77825;
 }
 /* 导航栏 */
 
-footer{
+footer {
   height: 50px;
 }
-footer .con{
+footer .con {
   border-top: 1px solid #666;
   text-align: center;
   padding-top: 20px;
 }
-footer .con p{
+footer .con p {
   line-height: 25px;
   color: #737373;
   font-size: 20px;
-  font-family: "FangZhen"
+  font-family: "FangZhen";
 }
 </style>
